@@ -1,0 +1,29 @@
+.vc-fix-grammar-chat-button {
+    color: var(--interactive-normal);
+    transition: color 0.2s, opacity 0.2s;
+    transform: translateY(2px);
+}
+
+.vc-fix-grammar-chat-button:hover {
+    color: var(--interactive-hover);
+}
+
+.vc-fix-grammar-chat-button-loading {
+    opacity: 0.4;
+    cursor: not-allowed;
+    animation: vc-fix-grammar-spin 1.2s linear infinite;
+}
+
+@keyframes vc-fix-grammar-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.vc-fix-grammar-auto-fix {
+    color: var(--green-360);
+}
